@@ -1,0 +1,922 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0512.1636                               -->
+<workbook original-version='18.1' source-build='2026.1.2 (20261.26.0512.1636)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='TableauProjectDashboard_17823863646540' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Used Car Price Prediction Dataset' inline='true' name='federated.1indsxn1mjeb231h42nmq1964l5u' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Used Car Price Prediction Dataset' name='textscan.1l7rgvz0qp8b2719c5hca0jrfzoz'>
+            <connection class='textscan' directory='F:/Interview/TechIT24/Tableau/Datasets' filename='Used Car Price Prediction Dataset.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1l7rgvz0qp8b2719c5hca0jrfzoz' name='Used Car Price Prediction Dataset.csv' table='[Used Car Price Prediction Dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Brand' ordinal='0' />
+            <column datatype='string' name='Model' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='real' name='Mileage_kmpl' ordinal='3' />
+            <column datatype='real' name='Engine_CC' ordinal='4' />
+            <column datatype='real' name='Horsepower' ordinal='5' />
+            <column datatype='string' name='Fuel_Type' ordinal='6' />
+            <column datatype='string' name='Transmission' ordinal='7' />
+            <column datatype='string' name='Owner_Type' ordinal='8' />
+            <column datatype='string' name='Color' ordinal='9' />
+            <column datatype='string' name='City' ordinal='10' />
+            <column datatype='integer' name='Kms_Driven' ordinal='11' />
+            <column datatype='integer' name='Insurance_Valid' ordinal='12' />
+            <column datatype='integer' name='Service_History' ordinal='13' />
+            <column datatype='integer' name='Accidents' ordinal='14' />
+            <column datatype='integer' name='Tax_Paid' ordinal='15' />
+            <column datatype='integer' name='Number_of_Doors' ordinal='16' />
+            <column datatype='integer' name='Seats' ordinal='17' />
+            <column datatype='integer' name='Registration_Age' ordinal='18' />
+            <column datatype='real' name='Price' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Brand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Brand]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Brand</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mileage_kmpl</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mileage_kmpl]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Mileage_kmpl</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine_CC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Engine_CC]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Engine_CC</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Horsepower</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Horsepower]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Horsepower</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fuel_Type]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Fuel_Type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transmission</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transmission]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Transmission</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Owner_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Owner_Type]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Owner_Type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Color</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Color]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Color</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Kms_Driven</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Kms_Driven]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Kms_Driven</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Insurance_Valid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Insurance_Valid]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Insurance_Valid</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Service_History</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Service_History]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Service_History</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accidents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Accidents]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Accidents</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tax_Paid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tax_Paid]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Tax_Paid</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number_of_Doors</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number_of_Doors]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Number_of_Doors</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Seats</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Seats]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Seats</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Registration_Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Registration_Age]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Registration_Age</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[Used Car Price Prediction Dataset.csv]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Engine CC' datatype='real' name='[Engine_CC]' role='measure' type='quantitative' />
+      <column caption='Fuel Type' datatype='string' name='[Fuel_Type]' role='dimension' type='nominal' />
+      <column caption='Insurance Valid' datatype='integer' name='[Insurance_Valid]' role='measure' type='quantitative' />
+      <column caption='Kms Driven' datatype='integer' name='[Kms_Driven]' role='measure' type='quantitative' />
+      <column caption='Mileage kmpl' datatype='real' name='[Mileage_kmpl]' role='measure' type='quantitative' />
+      <column caption='Number of Doors' datatype='integer' name='[Number_of_Doors]' role='measure' type='quantitative' />
+      <column caption='Owner Type' datatype='string' name='[Owner_Type]' role='dimension' type='nominal' />
+      <column caption='Registration Age' datatype='integer' name='[Registration_Age]' role='measure' type='quantitative' />
+      <column caption='Service History' datatype='integer' name='[Service_History]' role='measure' type='quantitative' />
+      <column caption='Tax Paid' datatype='integer' name='[Tax_Paid]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Used Car Price Prediction Dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/NavSun/AppData/Local/Temp/TableauTemp/#TableauTemp_14wr01o1hl1kbe18fogn809ewuil.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/30/2026 04:59:53 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Brand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Brand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Brand</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Model</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mileage_kmpl</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Mileage_kmpl]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mileage_kmpl</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>939608</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine_CC</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Engine_CC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine_CC</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>922535</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Horsepower</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Horsepower]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Horsepower</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>955014</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fuel_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Fuel_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fuel_Type</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transmission</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Transmission]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Transmission</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Owner_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Owner_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Owner_Type</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Color</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Color]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Color</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Kms_Driven</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Kms_Driven]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Kms_Driven</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>445838</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Insurance_Valid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Insurance_Valid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Insurance_Valid</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Service_History</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Service_History]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Service_History</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Accidents</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Accidents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Accidents</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tax_Paid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Tax_Paid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tax_Paid</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number_of_Doors</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number_of_Doors]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number_of_Doors</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Seats</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Seats]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Seats</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Registration_Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Registration_Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Registration_Age</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Used Car Price Prediction Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>912135</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Used Car Price Prediction Dataset.csv' id='Used Car Price Prediction Dataset.csv_E77A877978FF4CF88EB5D45E7FD34271'>
+            <properties context=''>
+              <relation connection='textscan.1l7rgvz0qp8b2719c5hca0jrfzoz' name='Used Car Price Prediction Dataset.csv' table='[Used Car Price Prediction Dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Brand' ordinal='0' />
+                  <column datatype='string' name='Model' ordinal='1' />
+                  <column datatype='integer' name='Year' ordinal='2' />
+                  <column datatype='real' name='Mileage_kmpl' ordinal='3' />
+                  <column datatype='real' name='Engine_CC' ordinal='4' />
+                  <column datatype='real' name='Horsepower' ordinal='5' />
+                  <column datatype='string' name='Fuel_Type' ordinal='6' />
+                  <column datatype='string' name='Transmission' ordinal='7' />
+                  <column datatype='string' name='Owner_Type' ordinal='8' />
+                  <column datatype='string' name='Color' ordinal='9' />
+                  <column datatype='string' name='City' ordinal='10' />
+                  <column datatype='integer' name='Kms_Driven' ordinal='11' />
+                  <column datatype='integer' name='Insurance_Valid' ordinal='12' />
+                  <column datatype='integer' name='Service_History' ordinal='13' />
+                  <column datatype='integer' name='Accidents' ordinal='14' />
+                  <column datatype='integer' name='Tax_Paid' ordinal='15' />
+                  <column datatype='integer' name='Number_of_Doors' ordinal='16' />
+                  <column datatype='integer' name='Seats' ordinal='17' />
+                  <column datatype='integer' name='Registration_Age' ordinal='18' />
+                  <column datatype='real' name='Price' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Maximum Price'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Maximum Price of Car</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Used Car Price Prediction Dataset' name='federated.1indsxn1mjeb231h42nmq1964l5u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1indsxn1mjeb231h42nmq1964l5u'>
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column-instance column='[Price]' derivation='Max' name='[max:Price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' data-class='subtotal' field='[federated.1indsxn1mjeb231h42nmq1964l5u].[max:Price:qk]' value='C1081%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1indsxn1mjeb231h42nmq1964l5u].[max:Price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0639496E-18A7-4D24-8820-0F3A57E6F7B9}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F05CF40F-4194-4727-8311-F80FA3732833}' />
+    </worksheet>
+    <worksheet name='Total Number of Brand'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Number of Brand</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Used Car Price Prediction Dataset' name='federated.1indsxn1mjeb231h42nmq1964l5u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1indsxn1mjeb231h42nmq1964l5u'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column-instance column='[Brand]' derivation='CountD' name='[ctd:Brand:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1indsxn1mjeb231h42nmq1964l5u].[ctd:Brand:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{19FCF5D7-BC99-444C-AAE0-F2EC1D3D19DE}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Total Number of Brand'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{805B550C-7C10-4761-95BE-720DF0C38285}' />
+    </window>
+    <window class='worksheet' name='Maximum Price'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{81978C77-4FF9-4CF6-BE4B-FC6359230A3C}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{908C8C8E-37FF-4C73-BC7C-96CAD63E9532}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='25' name='Maximum Price' width='104'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='25' name='Total Number of Brand' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAZCAYAAACB6CjhAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAABw0lEQVRYhe2YTyikYRzHP5gk8ZZ/G7GhyR4k1+WiXCi1uUxtjZJyIQdmtacppVXTioSV
+      3F5KtFlKUbNKSTngttuSpmaGXhqEZu3ibfTs4R0tDiKHp9f7fk7v7/k9T33fT7/nPbwJQgiB
+      hUmUHUA2tgDZAWRjC5AdQDa2ANkBZGMLkB1ANrYA2QFkY3kBDtkBno2+x9KIj+XXXnyu/Lut
+      w5/4Z1XmFnc4BkgtoLrBQ/O7EpT4HvMK0A/ZnOqlZ1LjVW6EP5mxexvCzPWqnNW30N9YREaq
+      Az0awN/TRtPuAF/bSo2XFyYlNN0pOtUNEbkSIqS6hVsNPe7g+YL44FbFzW7TTkDh+z764s/h
+      J5yLhYMElVzS4rV1PoKxvxxsjuP5tE3Dx3qy4sumnYDHos200zqxxen+CUqNl6GxYZzK//6L
+      F5DvGmTedWshuoy3doXahW6qHFa6AjcoTt5kBwhqRvlyBWhrzK7uod9b1nf8fL+oorLQqBOE
+      MONfYY2Z9lYmgkZ1/fuIEzLJSU8CoNo7j6fsF98++/iyGiG9uJy3zhS0H+sELivoGO2iLs+4
+      /SYV8BR0osdRYxKSFbKV5DtdCwh4mH+OGXR5DgEFrgAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
